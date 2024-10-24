@@ -1,0 +1,323 @@
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 346
+Server version: 8.0.21 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> CREATE DATABASE RUHANDE;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> USE RUHANDE;
+Database changed
+mysql> CREATE TABLE NGOMA(ID INT(16),FIRST_NAME CHAR(10),LAST_NAME CHAR(10),GENDER VARCHAR(10),PROVINCE VARCHAR(10),DISTRICT VARCHAR(10),SECTOR VARCHAR(10),CELL VARCHAR(10),E-MAIL VARCHAR(20),TELEPHONE_NUMBER(10));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-MAIL VARCHAR(20),TELEPHONE_NUMBER(10))' at line 1
+mysql> CREATE TABLE NGOMA(ID INT(16),FIRST_NAME CHAR(10),LAST_NAME CHAR(10),GENDER VARCHAR(10),PROVINCE VARCHAR(10),DISTRICT VARCHAR(10),SECTOR VARCHAR(10),CELL VARCHAR(10),E_MAIL VARCHAR(20),TELEPHONE_NUMBER VARCHAR(10));
+Query OK, 0 rows affected, 1 warning (0.03 sec)
+
+mysql> INSERT INTO NGOMA VALUES('2003876358378936','MARRY','UWASE','FEMALE','WEST','RUBAVU','GISENYI','NGOMA','marryuwase@gmail.com','0787825687');
+Query OK, 1 row affected, 1 warning (0.02 sec)
+
+mysql> INSERT INTO NGOMA VALUES('2002674839078936','SOLANGE','UMWIZA','FEMALE','WEST','RUBAVU','GISENYI',RUGERERO','solangeumwiza@gmail.com','0788736737');
+    '> INSERT INTO NGOMA VALUES('2002674839836836','ANGE','AMIZERO','FEMALE','WEST','RUBAVU','GISENYI','NGOMA','angeamizero@gmail.com','0736743037');
+    '> INSERT INTO NGOMA VALUES('2002674839078936','SOLANGE','UMWIZA','FEMALE','WEST','RUBAVU','GISENYI','RUGERERO','solangeumwiza@gmail.com','0788736737');
+    '> INSERT INTO NGOMA VALUES('2002674839078936','NADIA','YARAKOZE','FEMALE','NORTH','HUYE','TUMBA','BATIMA','nadiayarakoze@gmail.com','0727936737');
+    '> INSERT INTO NGOMA VALUES('2002674839078936','JEAN','BARAKA','MALE','NORTH','HUYE','TUMBA','BATIMA','jeanbaraka@gmail.com','0727629537');
+    '> INSERT INTO NGOMA VALUES('2002674839078936','CLOUDE','WIMANA','MALE','NORTH','HUYE','TUMBA','RUHANDE','cloudewimana@gmail.com','0727933537');
+    '> INSERT INTO NGOMA VALUES('2002678625178936','CLOUDE','WIMANA','MALE','NORTH','HUYE','TUMBA','RUHANDE','cloudewimana@gmail.com','0727933537');
+    '> INSERT INTO NGOMA VALUES('2002673901458936','JEAN','BARAKA','MALE','NORTH','HUYE','TUMBA','BATIMA','jeanbaraka@gmail.com','0727629537');
+    '> INSERT INTO NGOMA VALUES('2001234569878936','SOLANGE','UMWIZA','FEMALE','WEST','RUBAVU','GISENYI',RUGERERO','solangeumwiza@gmail.com','0788736737');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '','solangeumwiza@gmail.com','0788736737');
+INSERT INTO NGOMA VALUES('20026748398' at line 1
+mysql> INSERT INTO NGOMA VALUES('2001234569878936','SOLANGE','UMWIZA','FEMALE','WEST','RUBAVU','GISENYI','RUGERERO','solangeumwiza@gmail.com','0788736737');
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('2001234569878936','CLOUDINE','UWERA','FEMALE','WEST','RUBAVU','GISENYI','RANGO','clodineuwera@gmail.com','0798736737');
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('2001234986408936','CLOUDINE','UWERA','FEMALE','WEST','RUBAVU','GISENYI','RANGO','clodineuwera@gmail.com','0798736737');
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('2004349864083836','PASCAL','RWIGAMBA','MALE','NORTH','HUYE','TUMBA','RANGO','pascalrwigamba@gmail.com','0799676737');
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('2004347689003836','ANGE','MUTONI','FEMALE','NORTH','HUYE','TUMBA','RANGO','angemutoni@gmail.com','0723676737');
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('2000893846853476','BOSCO','KARANGWA','MALE','NORTH','HUYE','TUMBA','MUKONI','boscokarangwa@gmail.com','0723673457');
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> SELECT *FROM NGOMA;
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+| ID         | FIRST_NAME | LAST_NAME | GENDER | PROVINCE | DISTRICT | SECTOR  | CELL     | E_MAIL               | TELEPHONE_NUMBER |
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+| 2147483647 | MARRY      | UWASE     | FEMALE | WEST     | RUBAVU   | GISENYI | NGOMA    | marryuwase@gmail.com | 0787825687       |
+| 2147483647 | SOLANGE    | UMWIZA    | FEMALE | WEST     | RUBAVU   | GISENYI | RUGERERO | solangeumwiza@gmail. | 0788736737       |
+| 2147483647 | CLOUDINE   | UWERA     | FEMALE | WEST     | RUBAVU   | GISENYI | RANGO    | clodineuwera@gmail.c | 0798736737       |
+| 2147483647 | CLOUDINE   | UWERA     | FEMALE | WEST     | RUBAVU   | GISENYI | RANGO    | clodineuwera@gmail.c | 0798736737       |
+| 2147483647 | PASCAL     | RWIGAMBA  | MALE   | NORTH    | HUYE     | TUMBA   | RANGO    | pascalrwigamba@gmail | 0799676737       |
+| 2147483647 | ANGE       | MUTONI    | FEMALE | NORTH    | HUYE     | TUMBA   | RANGO    | angemutoni@gmail.com | 0723676737       |
+| 2147483647 | BOSCO      | KARANGWA  | MALE   | NORTH    | HUYE     | TUMBA   | MUKONI   | boscokarangwa@gmail. | 0723673457       |
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+7 rows in set (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('2001234846853476','BOSCO','RWAHIRWA','MALE','NORTH','HUYE','TUMBA','MUKONI','boscotwahirwa@gmail.com','0737873457');
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('2001234378935676','ADELINE','UWERA','FEMALE','NORTH','MUSANZE','TUMBA','HOGOZA','adelineuwera@gmail.com','0737800057');
+Query OK, 1 row affected, 2 warnings (0.01 sec)
+
+mysql> INSERT INTO NGOMA VALUES('2001234846853476','BOSCO','RWAHIRWA','MALE','SOUTH','HUYE','TUMBA','MUKONI','boscotwahirwa@gmail.com','0737873457');
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('2002673901458936','JEAN','BARAKA','MALE','SOUTH','HUYE','TUMBA','BATIMA','jeanbaraka@gmail.com','0727629537');
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('2002673901458936','JEAN','BARAKA','MALE','SOUTH','HUYE','TUMBA','BATIMA','jeanbaraka@gmail.com','0727629537');
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('2004349864083836','PASCAL','RWIGAMBA','MALE','SOUTH','HUYE','TUMBA','RANGO','pascalrwigamba@gmail.com','0799676737');
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> SELECT *FROM NGOMA;
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+| ID         | FIRST_NAME | LAST_NAME | GENDER | PROVINCE | DISTRICT | SECTOR  | CELL     | E_MAIL               | TELEPHONE_NUMBER |
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+| 2147483647 | MARRY      | UWASE     | FEMALE | WEST     | RUBAVU   | GISENYI | NGOMA    | marryuwase@gmail.com | 0787825687       |
+| 2147483647 | SOLANGE    | UMWIZA    | FEMALE | WEST     | RUBAVU   | GISENYI | RUGERERO | solangeumwiza@gmail. | 0788736737       |
+| 2147483647 | CLOUDINE   | UWERA     | FEMALE | WEST     | RUBAVU   | GISENYI | RANGO    | clodineuwera@gmail.c | 0798736737       |
+| 2147483647 | CLOUDINE   | UWERA     | FEMALE | WEST     | RUBAVU   | GISENYI | RANGO    | clodineuwera@gmail.c | 0798736737       |
+| 2147483647 | PASCAL     | RWIGAMBA  | MALE   | NORTH    | HUYE     | TUMBA   | RANGO    | pascalrwigamba@gmail | 0799676737       |
+| 2147483647 | ANGE       | MUTONI    | FEMALE | NORTH    | HUYE     | TUMBA   | RANGO    | angemutoni@gmail.com | 0723676737       |
+| 2147483647 | BOSCO      | KARANGWA  | MALE   | NORTH    | HUYE     | TUMBA   | MUKONI   | boscokarangwa@gmail. | 0723673457       |
+| 2147483647 | BOSCO      | RWAHIRWA  | MALE   | NORTH    | HUYE     | TUMBA   | MUKONI   | boscotwahirwa@gmail. | 0737873457       |
+| 2147483647 | ADELINE    | UWERA     | FEMALE | NORTH    | MUSANZE  | TUMBA   | HOGOZA   | adelineuwera@gmail.c | 0737800057       |
+| 2147483647 | BOSCO      | RWAHIRWA  | MALE   | SOUTH    | HUYE     | TUMBA   | MUKONI   | boscotwahirwa@gmail. | 0737873457       |
+| 2147483647 | JEAN       | BARAKA    | MALE   | SOUTH    | HUYE     | TUMBA   | BATIMA   | jeanbaraka@gmail.com | 0727629537       |
+| 2147483647 | JEAN       | BARAKA    | MALE   | SOUTH    | HUYE     | TUMBA   | BATIMA   | jeanbaraka@gmail.com | 0727629537       |
+| 2147483647 | PASCAL     | RWIGAMBA  | MALE   | SOUTH    | HUYE     | TUMBA   | RANGO    | pascalrwigamba@gmail | 0799676737       |
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+13 rows in set (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('2001234846853476','BOSCO','TWAHIRWA','MALE','NORTH','HUYE','TUMBA','MUKONI','boscotwahirwa@gmail.com','0737873457');
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> SELECT *FROM NGOMA;
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+| ID         | FIRST_NAME | LAST_NAME | GENDER | PROVINCE | DISTRICT | SECTOR  | CELL     | E_MAIL               | TELEPHONE_NUMBER |
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+| 2147483647 | MARRY      | UWASE     | FEMALE | WEST     | RUBAVU   | GISENYI | NGOMA    | marryuwase@gmail.com | 0787825687       |
+| 2147483647 | SOLANGE    | UMWIZA    | FEMALE | WEST     | RUBAVU   | GISENYI | RUGERERO | solangeumwiza@gmail. | 0788736737       |
+| 2147483647 | CLOUDINE   | UWERA     | FEMALE | WEST     | RUBAVU   | GISENYI | RANGO    | clodineuwera@gmail.c | 0798736737       |
+| 2147483647 | CLOUDINE   | UWERA     | FEMALE | WEST     | RUBAVU   | GISENYI | RANGO    | clodineuwera@gmail.c | 0798736737       |
+| 2147483647 | PASCAL     | RWIGAMBA  | MALE   | NORTH    | HUYE     | TUMBA   | RANGO    | pascalrwigamba@gmail | 0799676737       |
+| 2147483647 | ANGE       | MUTONI    | FEMALE | NORTH    | HUYE     | TUMBA   | RANGO    | angemutoni@gmail.com | 0723676737       |
+| 2147483647 | BOSCO      | KARANGWA  | MALE   | NORTH    | HUYE     | TUMBA   | MUKONI   | boscokarangwa@gmail. | 0723673457       |
+| 2147483647 | BOSCO      | RWAHIRWA  | MALE   | NORTH    | HUYE     | TUMBA   | MUKONI   | boscotwahirwa@gmail. | 0737873457       |
+| 2147483647 | ADELINE    | UWERA     | FEMALE | NORTH    | MUSANZE  | TUMBA   | HOGOZA   | adelineuwera@gmail.c | 0737800057       |
+| 2147483647 | BOSCO      | RWAHIRWA  | MALE   | SOUTH    | HUYE     | TUMBA   | MUKONI   | boscotwahirwa@gmail. | 0737873457       |
+| 2147483647 | JEAN       | BARAKA    | MALE   | SOUTH    | HUYE     | TUMBA   | BATIMA   | jeanbaraka@gmail.com | 0727629537       |
+| 2147483647 | JEAN       | BARAKA    | MALE   | SOUTH    | HUYE     | TUMBA   | BATIMA   | jeanbaraka@gmail.com | 0727629537       |
+| 2147483647 | PASCAL     | RWIGAMBA  | MALE   | SOUTH    | HUYE     | TUMBA   | RANGO    | pascalrwigamba@gmail | 0799676737       |
+| 2147483647 | BOSCO      | TWAHIRWA  | MALE   | NORTH    | HUYE     | TUMBA   | MUKONI   | boscotwahirwa@gmail. | 0737873457       |
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+14 rows in set (0.00 sec)
+
+mysql> delete from wheres
+    -> delete from where first_name='bosco';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'delete from where first_name='bosco'' at line 2
+mysql> delete from ngoma where first_name='bosco';
+Query OK, 4 rows affected (0.00 sec)
+
+mysql> SELECT *FROM NGOMA;
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+| ID         | FIRST_NAME | LAST_NAME | GENDER | PROVINCE | DISTRICT | SECTOR  | CELL     | E_MAIL               | TELEPHONE_NUMBER |
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+| 2147483647 | MARRY      | UWASE     | FEMALE | WEST     | RUBAVU   | GISENYI | NGOMA    | marryuwase@gmail.com | 0787825687       |
+| 2147483647 | SOLANGE    | UMWIZA    | FEMALE | WEST     | RUBAVU   | GISENYI | RUGERERO | solangeumwiza@gmail. | 0788736737       |
+| 2147483647 | CLOUDINE   | UWERA     | FEMALE | WEST     | RUBAVU   | GISENYI | RANGO    | clodineuwera@gmail.c | 0798736737       |
+| 2147483647 | CLOUDINE   | UWERA     | FEMALE | WEST     | RUBAVU   | GISENYI | RANGO    | clodineuwera@gmail.c | 0798736737       |
+| 2147483647 | PASCAL     | RWIGAMBA  | MALE   | NORTH    | HUYE     | TUMBA   | RANGO    | pascalrwigamba@gmail | 0799676737       |
+| 2147483647 | ANGE       | MUTONI    | FEMALE | NORTH    | HUYE     | TUMBA   | RANGO    | angemutoni@gmail.com | 0723676737       |
+| 2147483647 | ADELINE    | UWERA     | FEMALE | NORTH    | MUSANZE  | TUMBA   | HOGOZA   | adelineuwera@gmail.c | 0737800057       |
+| 2147483647 | JEAN       | BARAKA    | MALE   | SOUTH    | HUYE     | TUMBA   | BATIMA   | jeanbaraka@gmail.com | 0727629537       |
+| 2147483647 | JEAN       | BARAKA    | MALE   | SOUTH    | HUYE     | TUMBA   | BATIMA   | jeanbaraka@gmail.com | 0727629537       |
+| 2147483647 | PASCAL     | RWIGAMBA  | MALE   | SOUTH    | HUYE     | TUMBA   | RANGO    | pascalrwigamba@gmail | 0799676737       |
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+10 rows in set (0.00 sec)
+
+mysql> delete from ngoma where last_name='uwera';
+Query OK, 3 rows affected (0.00 sec)
+
+mysql> SELECT *FROM NGOMA;
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+| ID         | FIRST_NAME | LAST_NAME | GENDER | PROVINCE | DISTRICT | SECTOR  | CELL     | E_MAIL               | TELEPHONE_NUMBER |
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+| 2147483647 | MARRY      | UWASE     | FEMALE | WEST     | RUBAVU   | GISENYI | NGOMA    | marryuwase@gmail.com | 0787825687       |
+| 2147483647 | SOLANGE    | UMWIZA    | FEMALE | WEST     | RUBAVU   | GISENYI | RUGERERO | solangeumwiza@gmail. | 0788736737       |
+| 2147483647 | PASCAL     | RWIGAMBA  | MALE   | NORTH    | HUYE     | TUMBA   | RANGO    | pascalrwigamba@gmail | 0799676737       |
+| 2147483647 | ANGE       | MUTONI    | FEMALE | NORTH    | HUYE     | TUMBA   | RANGO    | angemutoni@gmail.com | 0723676737       |
+| 2147483647 | JEAN       | BARAKA    | MALE   | SOUTH    | HUYE     | TUMBA   | BATIMA   | jeanbaraka@gmail.com | 0727629537       |
+| 2147483647 | JEAN       | BARAKA    | MALE   | SOUTH    | HUYE     | TUMBA   | BATIMA   | jeanbaraka@gmail.com | 0727629537       |
+| 2147483647 | PASCAL     | RWIGAMBA  | MALE   | SOUTH    | HUYE     | TUMBA   | RANGO    | pascalrwigamba@gmail | 0799676737       |
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+7 rows in set (0.00 sec)
+
+mysql> delete from ngoma where last_name='baraka';
+Query OK, 2 rows affected (0.00 sec)
+
+mysql> SELECT *FROM NGOMA;
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+| ID         | FIRST_NAME | LAST_NAME | GENDER | PROVINCE | DISTRICT | SECTOR  | CELL     | E_MAIL               | TELEPHONE_NUMBER |
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+| 2147483647 | MARRY      | UWASE     | FEMALE | WEST     | RUBAVU   | GISENYI | NGOMA    | marryuwase@gmail.com | 0787825687       |
+| 2147483647 | SOLANGE    | UMWIZA    | FEMALE | WEST     | RUBAVU   | GISENYI | RUGERERO | solangeumwiza@gmail. | 0788736737       |
+| 2147483647 | PASCAL     | RWIGAMBA  | MALE   | NORTH    | HUYE     | TUMBA   | RANGO    | pascalrwigamba@gmail | 0799676737       |
+| 2147483647 | ANGE       | MUTONI    | FEMALE | NORTH    | HUYE     | TUMBA   | RANGO    | angemutoni@gmail.com | 0723676737       |
+| 2147483647 | PASCAL     | RWIGAMBA  | MALE   | SOUTH    | HUYE     | TUMBA   | RANGO    | pascalrwigamba@gmail | 0799676737       |
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+5 rows in set (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('2001234846853476','BOSCO','TWAHIRWA','MALE','SOUTH','HUYE','TUMBA','MUKONI','boscotwahirwa@gmail.com','0737873457');
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('2004003901458936','JEAN','BARAKA','MALE','SOUTH','HUYE','TUMBA','BATIMA','jeanbaraka@gmail.com','0727629537');
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('2001234378935676','ADELINE','UWERA','FEMALE','NORTH','MUSANZE','TUMBA','HOGOZA','adelineuwera@gmail.com','0737800057');
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('2001234569878936','CLOUDINE','UWERA','FEMALE','WEST','RUBAVU','GISENYI','RANGO','clodineuwera@gmail.com','0798736737');
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> SELECT *FROM NGOMA;
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+| ID         | FIRST_NAME | LAST_NAME | GENDER | PROVINCE | DISTRICT | SECTOR  | CELL     | E_MAIL               | TELEPHONE_NUMBER |
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+| 2147483647 | MARRY      | UWASE     | FEMALE | WEST     | RUBAVU   | GISENYI | NGOMA    | marryuwase@gmail.com | 0787825687       |
+| 2147483647 | SOLANGE    | UMWIZA    | FEMALE | WEST     | RUBAVU   | GISENYI | RUGERERO | solangeumwiza@gmail. | 0788736737       |
+| 2147483647 | CLOUDINE   | UWERA     | FEMALE | WEST     | RUBAVU   | GISENYI | RANGO    | clodineuwera@gmail.c | 0798736737       |
+| 2147483647 | PASCAL     | RWIGAMBA  | MALE   | NORTH    | HUYE     | TUMBA   | RANGO    | pascalrwigamba@gmail | 0799676737       |
+| 2147483647 | ANGE       | MUTONI    | FEMALE | NORTH    | HUYE     | TUMBA   | RANGO    | angemutoni@gmail.com | 0723676737       |
+| 2147483647 | ADELINE    | UWERA     | FEMALE | NORTH    | MUSANZE  | TUMBA   | HOGOZA   | adelineuwera@gmail.c | 0737800057       |
+| 2147483647 | JEAN       | BARAKA    | MALE   | SOUTH    | HUYE     | TUMBA   | BATIMA   | jeanbaraka@gmail.com | 0727629537       |
+| 2147483647 | BOSCO      | TWAHIRWA  | MALE   | SOUTH    | HUYE     | TUMBA   | MUKONI   | boscotwahirwa@gmail. | 0737873457       |
+| 2147483647 | PASCAL     | RWIGAMBA  | MALE   | SOUTH    | HUYE     | TUMBA   | RANGO    | pascalrwigamba@gmail | 0799676737       |
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+9 rows in set (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('2003234846853476','MERCI','UWASE','FEMALE','NORTH','HUYE','TUMBA','MUKONI','merciuwase@gmail.com','0732375463');
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> SELECT *FROM NGOMA;
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+| ID         | FIRST_NAME | LAST_NAME | GENDER | PROVINCE | DISTRICT | SECTOR  | CELL     | E_MAIL               | TELEPHONE_NUMBER |
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+| 2147483647 | MARRY      | UWASE     | FEMALE | WEST     | RUBAVU   | GISENYI | NGOMA    | marryuwase@gmail.com | 0787825687       |
+| 2147483647 | SOLANGE    | UMWIZA    | FEMALE | WEST     | RUBAVU   | GISENYI | RUGERERO | solangeumwiza@gmail. | 0788736737       |
+| 2147483647 | MERCI      | UWASE     | FEMALE | NORTH    | HUYE     | TUMBA   | MUKONI   | merciuwase@gmail.com | 0732375463       |
+| 2147483647 | CLOUDINE   | UWERA     | FEMALE | WEST     | RUBAVU   | GISENYI | RANGO    | clodineuwera@gmail.c | 0798736737       |
+| 2147483647 | PASCAL     | RWIGAMBA  | MALE   | NORTH    | HUYE     | TUMBA   | RANGO    | pascalrwigamba@gmail | 0799676737       |
+| 2147483647 | ANGE       | MUTONI    | FEMALE | NORTH    | HUYE     | TUMBA   | RANGO    | angemutoni@gmail.com | 0723676737       |
+| 2147483647 | ADELINE    | UWERA     | FEMALE | NORTH    | MUSANZE  | TUMBA   | HOGOZA   | adelineuwera@gmail.c | 0737800057       |
+| 2147483647 | JEAN       | BARAKA    | MALE   | SOUTH    | HUYE     | TUMBA   | BATIMA   | jeanbaraka@gmail.com | 0727629537       |
+| 2147483647 | BOSCO      | TWAHIRWA  | MALE   | SOUTH    | HUYE     | TUMBA   | MUKONI   | boscotwahirwa@gmail. | 0737873457       |
+| 2147483647 | PASCAL     | RWIGAMBA  | MALE   | SOUTH    | HUYE     | TUMBA   | RANGO    | pascalrwigamba@gmail | 0799676737       |
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+
+10 rows in set (0.00 sec)
+
+mysql> ALTER TABLE NGOMA ADD VILLEGE VARCHAR(10);
+Query OK, 10 rows affected (0.05 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+mysql> SELECT *FROM NGOMA;
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+---------+
+| ID         | FIRST_NAME | LAST_NAME | GENDER | PROVINCE | DISTRICT | SECTOR  | CELL     | E_MAIL               | TELEPHONE_NUMBER | VILLEGE |
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+---------+
+| 2147483647 | MARRY      | UWASE     | FEMALE | WEST     | RUBAVU   | GISENYI | NGOMA    | marryuwase@gmail.com | 0787825687       | NULL    |
+| 2147483647 | SOLANGE    | UMWIZA    | FEMALE | WEST     | RUBAVU   | GISENYI | RUGERERO | solangeumwiza@gmail. | 0788736737       | NULL    |
+| 2147483647 | MERCI      | UWASE     | FEMALE | NORTH    | HUYE     | TUMBA   | MUKONI   | merciuwase@gmail.com | 0732375463       | NULL    |
+| 2147483647 | CLOUDINE   | UWERA     | FEMALE | WEST     | RUBAVU   | GISENYI | RANGO    | clodineuwera@gmail.c | 0798736737       | NULL    |
+| 2147483647 | PASCAL     | RWIGAMBA  | MALE   | NORTH    | HUYE     | TUMBA   | RANGO    | pascalrwigamba@gmail | 0799676737       | NULL    |
+| 2147483647 | ANGE       | MUTONI    | FEMALE | NORTH    | HUYE     | TUMBA   | RANGO    | angemutoni@gmail.com | 0723676737       | NULL    |
+| 2147483647 | ADELINE    | UWERA     | FEMALE | NORTH    | MUSANZE  | TUMBA   | HOGOZA   | adelineuwera@gmail.c | 0737800057       | NULL    |
+| 2147483647 | JEAN       | BARAKA    | MALE   | SOUTH    | HUYE     | TUMBA   | BATIMA   | jeanbaraka@gmail.com | 0727629537       | NULL    |
+| 2147483647 | BOSCO      | TWAHIRWA  | MALE   | SOUTH    | HUYE     | TUMBA   | MUKONI   | boscotwahirwa@gmail. | 0737873457       | NULL    |
+| 2147483647 | PASCAL     | RWIGAMBA  | MALE   | SOUTH    | HUYE     | TUMBA   | RANGO    | pascalrwigamba@gmail | 0799676737       | NULL    |
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+---------+
+10 rows in set (0.00 sec)
+
+mysql> UPDATE NGOMA SET VILLAGE='UBUMWE' WHERE ID=2147483647;
+ERROR 1054 (42S22): Unknown column 'VILLAGE' in 'field list'
+mysql> UPDATE NGOMA SET VILLEGE='UBUMWE' WHERE ID=2147483647;
+Query OK, 10 rows affected (0.00 sec)
+Rows matched: 10  Changed: 10  Warnings: 0
+
+mysql> SELECT *FROM NGOMA;
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+---------+
+| ID         | FIRST_NAME | LAST_NAME | GENDER | PROVINCE | DISTRICT | SECTOR  | CELL     | E_MAIL               | TELEPHONE_NUMBER | VILLEGE |
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+---------+
+| 2147483647 | MARRY      | UWASE     | FEMALE | WEST     | RUBAVU   | GISENYI | NGOMA    | marryuwase@gmail.com | 0787825687       | UBUMWE  |
+| 2147483647 | SOLANGE    | UMWIZA    | FEMALE | WEST     | RUBAVU   | GISENYI | RUGERERO | solangeumwiza@gmail. | 0788736737       | UBUMWE  |
+| 2147483647 | MERCI      | UWASE     | FEMALE | NORTH    | HUYE     | TUMBA   | MUKONI   | merciuwase@gmail.com | 0732375463       | UBUMWE  |
+| 2147483647 | CLOUDINE   | UWERA     | FEMALE | WEST     | RUBAVU   | GISENYI | RANGO    | clodineuwera@gmail.c | 0798736737       | UBUMWE  |
+| 2147483647 | PASCAL     | RWIGAMBA  | MALE   | NORTH    | HUYE     | TUMBA   | RANGO    | pascalrwigamba@gmail | 0799676737       | UBUMWE  |
+| 2147483647 | ANGE       | MUTONI    | FEMALE | NORTH    | HUYE     | TUMBA   | RANGO    | angemutoni@gmail.com | 0723676737       | UBUMWE  |
+| 2147483647 | ADELINE    | UWERA     | FEMALE | NORTH    | MUSANZE  | TUMBA   | HOGOZA   | adelineuwera@gmail.c | 0737800057       | UBUMWE  |
+| 2147483647 | JEAN       | BARAKA    | MALE   | SOUTH    | HUYE     | TUMBA   | BATIMA   | jeanbaraka@gmail.com | 0727629537       | UBUMWE  |
+| 2147483647 | BOSCO      | TWAHIRWA  | MALE   | SOUTH    | HUYE     | TUMBA   | MUKONI   | boscotwahirwa@gmail. | 0737873457       | UBUMWE  |
+| 2147483647 | PASCAL     | RWIGAMBA  | MALE   | SOUTH    | HUYE     | TUMBA   | RANGO    | pascalrwigamba@gmail | 0799676737       | UBUMWE  |
++------------+------------+-----------+--------+----------+----------+---------+----------+----------------------+------------------+---------+
+10 rows in set (0.00 sec)
+
+mysql> ALTER TABLE NGOMA DROP PROVINCE;
+Query OK, 10 rows affected (0.05 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+mysql> SELECT *FROM NGOMA;
++------------+------------+-----------+--------+----------+---------+----------+----------------------+------------------+---------+
+| ID         | FIRST_NAME | LAST_NAME | GENDER | DISTRICT | SECTOR  | CELL     | E_MAIL               | TELEPHONE_NUMBER | VILLEGE |
++------------+------------+-----------+--------+----------+---------+----------+----------------------+------------------+---------+
+| 2147483647 | MARRY      | UWASE     | FEMALE | RUBAVU   | GISENYI | NGOMA    | marryuwase@gmail.com | 0787825687       | UBUMWE  |
+| 2147483647 | SOLANGE    | UMWIZA    | FEMALE | RUBAVU   | GISENYI | RUGERERO | solangeumwiza@gmail. | 0788736737       | UBUMWE  |
+| 2147483647 | MERCI      | UWASE     | FEMALE | HUYE     | TUMBA   | MUKONI   | merciuwase@gmail.com | 0732375463       | UBUMWE  |
+| 2147483647 | CLOUDINE   | UWERA     | FEMALE | RUBAVU   | GISENYI | RANGO    | clodineuwera@gmail.c | 0798736737       | UBUMWE  |
+| 2147483647 | PASCAL     | RWIGAMBA  | MALE   | HUYE     | TUMBA   | RANGO    | pascalrwigamba@gmail | 0799676737       | UBUMWE  |
+| 2147483647 | ANGE       | MUTONI    | FEMALE | HUYE     | TUMBA   | RANGO    | angemutoni@gmail.com | 0723676737       | UBUMWE  |
+| 2147483647 | ADELINE    | UWERA     | FEMALE | MUSANZE  | TUMBA   | HOGOZA   | adelineuwera@gmail.c | 0737800057       | UBUMWE  |
+| 2147483647 | JEAN       | BARAKA    | MALE   | HUYE     | TUMBA   | BATIMA   | jeanbaraka@gmail.com | 0727629537       | UBUMWE  |
+| 2147483647 | BOSCO      | TWAHIRWA  | MALE   | HUYE     | TUMBA   | MUKONI   | boscotwahirwa@gmail. | 0737873457       | UBUMWE  |
+| 2147483647 | PASCAL     | RWIGAMBA  | MALE   | HUYE     | TUMBA   | RANGO    | pascalrwigamba@gmail | 0799676737       | UBUMWE  |
++------------+------------+-----------+--------+----------+---------+----------+----------------------+------------------+---------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT *FROM NGOMA WHERE FIRST_NAME=MARRY AND CELL=NGOMA;
+ERROR 1054 (42S22): Unknown column 'MARRY' in 'where clause'
+mysql> SELECT *FROM NGOMA WHERE FIRST_NAME='MARRY' AND CELL='NGOMA';
++------------+------------+-----------+--------+----------+---------+-------+----------------------+------------------+---------+
+| ID         | FIRST_NAME | LAST_NAME | GENDER | DISTRICT | SECTOR  | CELL  | E_MAIL               | TELEPHONE_NUMBER | VILLEGE |
++------------+------------+-----------+--------+----------+---------+-------+----------------------+------------------+---------+
+| 2147483647 | MARRY      | UWASE     | FEMALE | RUBAVU   | GISENYI | NGOMA | marryuwase@gmail.com | 0787825687       | UBUMWE  |
++------------+------------+-----------+--------+----------+---------+-------+----------------------+------------------+---------+
+1 row in set (0.00 sec)
+
+mysql> SELECT *FROM NGOMA WHERE GENDER='FEMALE' OR DISTRICT='RUBAVU';
++------------+------------+-----------+--------+----------+---------+----------+----------------------+------------------+---------+
+| ID         | FIRST_NAME | LAST_NAME | GENDER | DISTRICT | SECTOR  | CELL     | E_MAIL               | TELEPHONE_NUMBER | VILLEGE |
++------------+------------+-----------+--------+----------+---------+----------+----------------------+------------------+---------+
+| 2147483647 | MARRY      | UWASE     | FEMALE | RUBAVU   | GISENYI | NGOMA    | marryuwase@gmail.com | 0787825687       | UBUMWE  |
+| 2147483647 | SOLANGE    | UMWIZA    | FEMALE | RUBAVU   | GISENYI | RUGERERO | solangeumwiza@gmail. | 0788736737       | UBUMWE  |
+| 2147483647 | MERCI      | UWASE     | FEMALE | HUYE     | TUMBA   | MUKONI   | merciuwase@gmail.com | 0732375463       | UBUMWE  |
+| 2147483647 | CLOUDINE   | UWERA     | FEMALE | RUBAVU   | GISENYI | RANGO    | clodineuwera@gmail.c | 0798736737       | UBUMWE  |
+| 2147483647 | ANGE       | MUTONI    | FEMALE | HUYE     | TUMBA   | RANGO    | angemutoni@gmail.com | 0723676737       | UBUMWE  |
+| 2147483647 | ADELINE    | UWERA     | FEMALE | MUSANZE  | TUMBA   | HOGOZA   | adelineuwera@gmail.c | 0737800057       | UBUMWE  |
++------------+------------+-----------+--------+----------+---------+----------+----------------------+------------------+---------+
+6 rows in set (0.00 sec)
+
+mysql>
